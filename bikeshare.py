@@ -196,8 +196,12 @@ def user_stats(df):
                 return
             print(df.iloc[start_loc:start_loc+5])
 
-
-
+#Alternative code for viewing raw data
+    """while True:
+        print(df.sample(5))
+       view_more = input("Do you want to see more raw data? Type 'yes' to see more")
+        if view_more != "yes":
+        break"""
 
 
 def main():
