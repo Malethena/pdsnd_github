@@ -3,6 +3,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#Create the city data variable, type list
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -17,8 +18,16 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
+<<<<<<< HEAD
 
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+||||||| 8a8ab86
+    
+    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+=======
+
+    # TO DO: get user input for city (chicago, new york city, washington).
+>>>>>>> documentation
     city = input('Which city do you want to analyze data for?: ').lower()
     while city not in ['chicago', 'new york city', 'washington']:
         city = input ("City not found, please enter either of the following chicago, new york city or washington: ").lower()
@@ -195,6 +204,7 @@ def user_stats(df):
             if view_data != 'yes':
                 return
             print(df.iloc[start_loc:start_loc+5])
+<<<<<<< HEAD
 
 #Alternative code for viewing raw data
     """while True:
@@ -204,6 +214,19 @@ def user_stats(df):
         break"""
 
 
+||||||| 8a8ab86
+        
+    
+            
+    
+    
+=======
+
+
+
+
+
+>>>>>>> documentation
 def main():
     while True:
         city, month, day = get_filters()
